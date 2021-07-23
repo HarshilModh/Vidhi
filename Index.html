@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;}
+         body{background:url('pexels-jess-bailey-designs-1172849.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;}   
+        /* body{background: #fff;} */
+        .icon{position:absolute;top:5%;left:5%}
+        .btn{position:absolute;top:5%;left:70%}
+        ul{list-style: none;display: flex;}
+        li a{padding: 20px;color:grey;font-size: 30px;text-decoration:none;position: relative;transition: .5s;}
+        li a::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       /* border:1px solid #fff;*/ 
+         border-top:1px solid #fff;
+         border-bottom:1px solid #fff;
+         left:0;top:0;opacity: 0;
+         transform: scaleY(2);
+         transition: .5s;
+    }
+    li a:hover::before{
+        opacity: 1;
+        transform: scaleY(1);
+        border-top:2px solid #FC54AC;
+        border-bottom:2px solid#FC54AC;
+    }
+    li a:hover{color:#FC54AC;}
+    li a::after{
+        content: '';
+        position: absolute;
+        width: 100%;height: 100%;
+       
+        left:0%;top:0%;
+        z-index:-1;
+        transform: scale(0);
+        transition: .5s;
+        transition-delay: .5s;
+
+    }
+    li a:hover::after{
+        transform: scale(1);
+    }
+         .main{position: absolute;top: 30%;left: 10%;}
+         .box{width: 700px;padding: 5px;border: none;color:mediumorchid;
+             font-size: 55px;margin-bottom: 0%;}
+             .msg{width: 700px;border: none;color:mediumorchid;
+             font-size: 20px;}
+             span{position:absolute;width: 100px;height: 100px;background: #FC54AC ;
+        animation-name: ani;animation-duration: 10s;animation-iteration-count: infinite;}
+      span:nth-child(1){top:20%;left:30%;animation-duration: 1s;}
+      span:nth-child(2){top:10%;left:70%;animation-duration: 2.5s;}
+      span:nth-child(3){top:70%;left:12%;animation-duration: 1.6s;}
+      span:nth-child(4){top:40%;left:30%;animation-duration: 5s;}
+      span:nth-child(5){top:55%;left:67.75%;animation-duration: 4.3s;}
+      span:nth-child(6){top:75%;left:75%;animation-duration: 6s;}   
+      span:nth-child(7){top:15%;left:10%;animation-duration: 7.3s;}
+      span:nth-child(8){top:50%;left:70%;animation-duration: 3.3s;}
+      span:nth-child(9){top:45%;left:86%;animation-duration: 9s;}
+      span:nth-child(10){top:30%;left:15%;animation-duration: 6.8s;}
+      span:nth-child(11){top:75%;left:75%;animation-duration: 6s;}   
+      span:nth-child(12){top:15%;left:10%;animation-duration: 7.3s;}
+      span:nth-child(13){top:50%;left:70%;animation-duration: 3.3s;}
+      span:nth-child(14){top:45%;left:86%;animation-duration: 9s;}
+      span:nth-child(15){top:30%;left:15%;animation-duration: 6.8s;}
+      @keyframes ani {
+        0%{transform: scale(0); rotate (0deg);opacity: 1;}
+          100%{transform: scale(1); rotate (360deg);opacity: 0;border-radius: 50%;}
+      }
+    </style>
+</head>
+<body>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="main">
+        <div class="box">
+           <pre>
+            Happy Birthday 
+        </pre>
+            <div class="msg">
+                <pre>
+                                 Happy birthday to my crazy, fun, fabulous best friend! 
+                                 &nbsp;
+                                 I love you to the moon and back and am so grateful for
+                                 &nbsp;
+                                 your friendship and all the fun times  we’ve shared this 
+                                 &nbsp;
+                                 year.You’ve been there for me through all my ups and downs,
+                                 &nbsp;
+                                 and I hope you know I’m always here for you too.
+                                 &nbsp; 
+                                 Thanks for being such a wonderful best friend
+                                 &nbsp;
+                                 you’re the best! I hope you have a brilliant day.  
+            </pre>
+            </div>
+            
+        </div>
+    </div>
+    <div class="btn">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Photos.html">Photos</a></li>
+        </ul>
+    </div>
+    <div class="icon">
+        <img src="430713-64 (3).png" alt="">
+    </div>
+ 
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>    *{box-sizing: border-box;margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;}
+      body{background:url('pexels-jess-bailey-designs-1172849.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;}   
+        /* body{background: #fff;} */
+        .icon{position:absolute;top:5%;left:5%}
+        .btn{position:absolute;top:5%;left:70%}
+        ul{list-style: none;display: flex;}
+        li a{padding: 20px;color:grey;font-size: 30px;text-decoration:none;position: relative;transition: .5s;}
+        li a::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       /* border:1px solid #fff;*/ 
+         border-top:1px solid #fff;
+         border-bottom:1px solid #fff;
+         left:0;top:0;opacity: 0;
+         transform: scaleY(2);
+         transition: .5s;
+    }
+    li a:hover::before{
+        opacity: 1;
+        transform: scaleY(1);
+        border-top:2px solid #FC54AC;
+        border-bottom:2px solid#FC54AC;
+    }
+    li a:hover{color:#FC54AC;}
+    li a::after{
+        content: '';
+        position: absolute;
+        width: 100%;height: 100%;
+       
+        left:0%;top:0%;
+        z-index:-1;
+        transform: scale(0);
+        transition: .5s;
+        transition-delay: .5s;
+
+    }
+    li a:hover::after{
+        transform: scale(1);
+    }
+    .container {
+  position: absolute;
+  width:60%;padding:80px;
+  margin-top: 50px;
+  
+  left: 20%;
+
+}
+
+/* Hide the images by default */
+img {
+  vertical-align: middle;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+
+/* Hide the images by default */
+.mySlides {
+
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+.prev
+    {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left:0%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(216, 207, 207, 0.651);
+  border-radius: 25%;
+}.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    margin-top: 25px;
+  float: left;
+  width: 11%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+span{position:absolute;width: 100px;height: 100px;background: #FC54AC ;
+        animation-name: ani;animation-duration: 10s;animation-iteration-count: infinite;}
+      span:nth-child(1){top:20%;left:30%;animation-duration: 1s;}
+      span:nth-child(2){top:10%;left:70%;animation-duration: 2.5s;}
+      span:nth-child(3){top:70%;left:12%;animation-duration: 1.6s;}
+      span:nth-child(4){top:40%;left:30%;animation-duration: 5s;}
+      span:nth-child(5){top:55%;left:67.75%;animation-duration: 4.3s;}
+      span:nth-child(6){top:75%;left:75%;animation-duration: 6s;}   
+      span:nth-child(7){top:15%;left:10%;animation-duration: 7.3s;}
+      span:nth-child(8){top:50%;left:70%;animation-duration: 3.3s;}
+      span:nth-child(9){top:45%;left:86%;animation-duration: 9s;}
+      span:nth-child(10){top:30%;left:15%;animation-duration: 6.8s;}
+      span:nth-child(11){top:75%;left:75%;animation-duration: 6s;}   
+      span:nth-child(12){top:15%;left:10%;animation-duration: 7.3s;}
+      span:nth-child(13){top:50%;left:70%;animation-duration: 3.3s;}
+      span:nth-child(14){top:45%;left:86%;animation-duration: 9s;}
+      span:nth-child(15){top:30%;left:15%;animation-duration: 6.8s;}
+      @keyframes ani {
+        0%{transform: scale(0); rotate (0deg);opacity: 1;}
+          100%{transform: scale(1); rotate (360deg);opacity: 0;border-radius: 50%;}
+      }
+      
+</style>
+
+</head>
+<body>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+   
+    <div class="container">
+        <div class="mySlides" style="height:max-content;">
+         
+          <img src="1621534606594.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides">
+           
+            <img src="IMG_20200825_235959.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG-20191103-WA0032.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="1621534606549.JPG" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="1621534606560.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="20201019120409_IMG_5505.JPG" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG-20201119-WA0030.jpg" style="width:100%">
+          </div>
+         
+          <div class="mySlides">
+           
+            <img src="IMG_20200712_144314_Bokeh.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+           
+            <img src="IMG-20201024-WA0020.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG_20181111_181232_555.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG_20200922_011702_060.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG_20200825_235946.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="SAVE_20200527_144412.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG-20201119-WA0019.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+           
+            <img src="IMG-20201024-WA0020.jpg" style="width:100%">
+          </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+   
+    <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="1621534606594.jpeg" style="width:100%" onclick="currentSlide(1)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="1621534606583.jpeg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG-20191103-WA0032.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="1621534606549.JPG" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="1621534606560.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="20201019120409_IMG_5505.JPG" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG-20201119-WA0030.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG_20200712_144314_Bokeh.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG-20201024-WA0020.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+       
+        <div class="column">
+          <img class="demo cursor" src="IMG_20181111_181232_555.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG_20200922_011702_060.jpg`" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG_20200825_235946.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="SAVE_20200527_144412.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="IMG-20201119-WA0019.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+
+       <div class="column">
+          <img class="demo cursor" src="IMG-20201024-WA0020.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+        </div>
+        
+    </div>
+</div>
+<div class="btn">
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="#">Photos</a></li>
+    </ul>
+    
+</div>
+<div class="icon">
+    <img src="430713-64 (3).png" alt="">
+</div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+</body>
+</html>
